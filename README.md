@@ -1,10 +1,9 @@
 # wasabi_vehiclenames
-This resource was created for both ESX and QBCore servers to easily add labels to vehicles from their database
+This resource was created for ESX servers to easily and automatically add labels to vehicles from their database
 
 ## Features:
-- Supports both ESX and QBCore
+- Supports ESX
 - Automatically adds text entries to vehicles within SQL database
-- Automatically detects framework with no need of additional configuration
 - Option to add additional vehicles within the config
 
 
