@@ -19,6 +19,10 @@ This resource was created for both ESX and QBCore servers to easily add labels t
 
 - Some labels will not show up properly. This is not a malfunction of the script and seems to be a bug with textures of certain vehicles apparently(Not really sure).
 
+## Credits
+- Myself
+- Nass: https://forum.cfx.re/u/nasstman
+
 # Preview
 https://i.imgur.com/hDq3OdF.png
 
