@@ -6,6 +6,14 @@ local sqlVehicles = {}
 local framework = ''
 
 CreateThread(function()
+    if Config.Cars then
+        for k,v in pairs(Config.Cars) do
+            AddTextEntry(k, v)
+        end
+    end
+end)
+
+CreateThread(function()
     if Config.UseSQL then
         if framework == '' then
             if GetResourceState('es_extended') == "started" then
