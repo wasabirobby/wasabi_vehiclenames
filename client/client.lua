@@ -56,7 +56,6 @@ end)
 
 RegisterNetEvent('wasabi_vehiclenames:sendVehicleList')
 AddEventHandler('wasabi_vehiclenames:sendVehicleList', function(_vehicles)
-    print('made it')
     for k,v in ipairs(_vehicles) do
         AddTextEntry(v.model, v.name)
     end
