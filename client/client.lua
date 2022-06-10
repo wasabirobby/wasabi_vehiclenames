@@ -3,7 +3,6 @@
 ---------------------------------------------------------------
 ESX = nil
 local sqlVehicles = {}
-local framework = ''
 
 CreateThread(function()
     if Config.Cars then
