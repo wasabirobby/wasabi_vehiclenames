@@ -4,11 +4,7 @@
 ESX = nil
 local vehicles = {}
 
-CreateThread(function()
-    if Config.UseSQL then
-        TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
-    end
-end)
+TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
 
 CreateThread(function()
     if Config.UseSQL then
