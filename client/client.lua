@@ -2,24 +2,18 @@
 ----------------- https://discord.gg/XJFNyMy3Bv ---------------
 ---------------------------------------------------------------
 ESX = nil
-local sqlVehicles = {}
 
 CreateThread(function()
-    if Config.Cars then
-        for k,v in pairs(Config.Cars) do
-            AddTextEntry(k, v)
-        end
+    while ESX == nil do 
+        TriggerEvent("esx:getSharedObject", function(obj) 
+            ESX = obj 
+        end)
+        Wait(0)
     end
 end)
 
 CreateThread(function()
     if Config.UseSQL then
-        while ESX == nil do 
-            TriggerEvent("esx:getSharedObject", function(obj) 
-                ESX = obj 
-            end)
-            Wait(500)
-        end
         ESX.TriggerServerCallback('wasabi_vehiclenames:getVehicles', function(cb)          
             if cb then
                 for k,v in pairs(cb) do
@@ -27,6 +21,14 @@ CreateThread(function()
                 end
             end
         end)
+    end
+end)
+
+CreateThread(function()
+    if Config.Cars then
+        for k,v in pairs(Config.Cars) do
+            AddTextEntry(k, v)
+        end
     end
 end)
 
