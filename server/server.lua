@@ -17,7 +17,6 @@ CreateThread(function()
             end
         end)
         TriggerClientEvent('wasabi_vehiclenames:sendVehicleList', -1, vehicles)
-        print('wasabi_vehiclenames: Loaded '..#vehicles..' vehicle names from SQL database.')
     end
 end)
 
