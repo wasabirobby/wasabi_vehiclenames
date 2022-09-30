@@ -26,4 +26,4 @@ This resource was created for ESX servers to easily and automatically add labels
 https://i.imgur.com/hDq3OdF.png
 
 # Support
-Join our discord <a href='https://discord.gg/XJFNyMy3Bv'>HERE</a> for additional scripts and support!
+<a href='https://discord.gg/79zjvy4JMs'>![Discord Banner 2](https://discordapp.com/api/guilds/1025493337031049358/widget.png?style=banner2)</a>
