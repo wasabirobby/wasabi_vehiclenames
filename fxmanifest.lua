@@ -5,6 +5,8 @@ fx_version 'cerulean'
 
 game 'gta5'
 
+lua54 'yes'
+
 author 'wasabirobby#5110'
 
 description 'ESX / QBCore vehicle name script'
@@ -17,6 +19,5 @@ client_script 'client/*.lua'
 
 server_scripts {
     'server/*.lua',
-    '@mysql-async/lib/MySQL.lua', -- Feel free to comment out if you use 'oxmysql'
-    '@oxmysql/lib/MySQL.lua', -- Feel free to comment out if you use 'mysql-async'
+    '@mysql-async/lib/MySQL.lua'
 }

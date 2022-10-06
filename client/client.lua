@@ -1,20 +1,12 @@
 -----------------For support, scripts, and more----------------
 --------------- https://discord.gg/wasabiscripts  -------------
 ---------------------------------------------------------------
-ESX = nil
 
-CreateThread(function()
-    while ESX == nil do 
-        TriggerEvent("esx:getSharedObject", function(obj) 
-            ESX = obj 
-        end)
-        Wait(0)
-    end
-end)
+ESX = exports["es_extended"]:getSharedObject()
 
 CreateThread(function()
     if Config.UseSQL then
-        ESX.TriggerServerCallback('wasabi_vehiclenames:getVehicles', function(cb)          
+        ESX.TriggerServerCallback('wasabi_vehiclenames:getVehicles', function(cb)
             if cb then
                 for k,v in pairs(cb) do
                     AddTextEntry(v.model, v.name)

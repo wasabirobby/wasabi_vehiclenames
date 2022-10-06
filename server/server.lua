@@ -1,10 +1,9 @@
 -----------------For support, scripts, and more----------------
 --------------- https://discord.gg/wasabiscripts  -------------
 ---------------------------------------------------------------
-ESX = nil
-local vehicles = {}
 
-TriggerEvent("esx:getSharedObject", function(obj) ESX = obj end)
+ESX = exports["es_extended"]:getSharedObject()
+local vehicles = {}
 
 CreateThread(function()
     if Config.UseSQL then
