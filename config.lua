@@ -11,5 +11,5 @@ Config.UseSQL = true -- Pull vehicles and labels from where the vehicles are sto
 Config.Cars = { -- Additional vehicles and their respective labels(No need to add cars that are in your vehicles sql table if Config.UseSQL is set to true)
 --  ['SPAWN_NAME'] = 'LABEL HERE',
     ['wildtrak'] = '2021 Ford Bronco',
-    ['02camaro'] = '2002 Cheverolet Camaro',
+    ['02camaro'] = '2002 Cheverolet Camaro'
 }

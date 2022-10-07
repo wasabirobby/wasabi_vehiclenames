@@ -19,7 +19,6 @@ CreateThread(function()
     end
 end)
 
-
 ESX.RegisterServerCallback('wasabi_vehiclenames:getVehicles', function(source, cb)
     if vehicles then
         cb(vehicles)
