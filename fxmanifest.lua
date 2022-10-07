@@ -12,7 +12,7 @@ author 'wasabirobby#5110'
 
 description 'ESX / QBCore vehicle name script'
 
-version '1.0.0'
+version '1.0.1'
 
 shared_script 'config.lua'
 
